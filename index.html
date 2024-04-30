@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <!-- GET: Dane są przesyłane jako parametry URL. 
+        Po kliknięciu przycisku "submit", dane formularza są dołączane do adresu URL jako ciąg zapytania (query string), 
+        co oznacza, że są one widoczne w adresie przeglądarki. 
+        Jest to użyteczne do przekazywania niewrażliwych danych, takich jak wyszukiwane słowa, 
+        ale nie jest zalecane do przesyłania poufnych danych, ponieważ mogą być widoczne 
+        w historii przeglądarki lub dziennikach serwera. -->
+    <!-- POST: Dane są przesyłane jako część ciała żądania HTTP, 
+        a nie jako część adresu URL, co oznacza, że nie są one widoczne w adresie przeglądarki. 
+        Metoda POST jest zwykle używana do przesyłania bardziej poufnych danych, 
+        takich jak hasła lub dane karty kredytowej, ponieważ są one bezpieczniejsze niż metoda GET. -->
+
+    <form action="welcome.php" method="get">
+        Name: <input type="text" name="name"><br>
+        E-mail: <input type="text" name="email"><br>
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>
